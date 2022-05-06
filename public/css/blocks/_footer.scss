@@ -1,0 +1,37 @@
+.footer {
+    background: #222224;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    padding: 30px 0;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #FBFBFB;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contact-box {
+    height: 32px;
+    width: 32px;
+    background: #FFFFFF;
+    margin: 24px 0;
+    margin-right: 8px;
+    transition-duration: 0.4s;
+}
+
+.contact-box:hover .contact-img{
+    fill: #FFFFFF;
+}
+
+.contact-box:hover .contact-img-background{
+    fill: $pink;
+}

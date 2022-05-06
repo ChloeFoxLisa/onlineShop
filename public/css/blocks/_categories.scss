@@ -1,0 +1,237 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 96px;
+}
+
+.category-item {
+    background-color: #211616;
+    width: 31.5%;
+    height: 260px;
+    color: #fff;
+    text-align: center;
+    transition-duration: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+}
+
+.category-acc {
+    width: 100%;
+    margin-top: 30px;
+    height: 178px;
+    background-image: url(../img/acc.png);
+    transition-duration: 0.4s;
+    background-size: 100%;
+}
+
+.category-acc:hover {
+    transform: scale(1.05);
+}
+
+.category-women {
+    background-image: url(../img/women.png);
+    background-size: 100%;
+}
+
+.category-men {
+    background-image: url(../img/men.png);
+    background-size: 100%;
+}
+
+.category-kids {
+    background-image: url(../img/kids.png);
+    background-size: 100%;
+}
+
+/*.all-text-categories {
+    //margin: 105px 103px;
+    
+}
+
+.all-text-categories-bottom {
+    margin: 65px 490px;
+}*/
+
+.text-top-category {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+}
+
+.text-bottom-category {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color:$pink;
+}
+
+.products-title {
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.products-title-descr{
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #9F9F9F;
+    margin-top: 0;
+    margin-bottom: 41px;
+}
+
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.card {
+    height: 582px;
+    width: 360px;
+    background-color: #F8F8F8;
+    margin-top: 30px;
+
+    &__image {
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        background: rgba(58, 56, 56, 0.86);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        opacity: 0;
+    }
+
+    &__btn {
+        border: 1px solid #FFF;
+        background-color: rgba(58, 56, 56, 0.86);
+        color: #fff;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em; 
+        display: flex;
+        height: 44px;
+        width: 139px;
+        justify-content: space-around;
+        cursor: pointer;
+
+        &__img {
+            margin: auto 0;
+        }
+    }
+}
+
+.card:hover .card__overlay {
+    opacity: 1; 
+}
+
+.card-text {
+    margin-top: 25px;
+    margin-left: 18px;
+    margin-right: 29px;
+}
+
+.card-img {
+    display: block;
+}
+
+.brand {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.card-descr {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 18px;
+}
+
+.price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $pink;
+}
+
+.card-button {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    height: 48px;
+    width: 212px;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 95px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.card-button:hover {
+    background-color: $pink;
+    color: #fff;
+    border: 1px solid $pink;
+}
+
+@media (max-width: 1180px) {
+    .category-item {
+        height: 167px;
+    }
+
+    .categories {
+        padding-top: 20px;
+        padding-bottom: 155px;
+    }
+
+    .category-acc {
+        margin-top: 20px;
+    }
+
+    .card-button {
+        margin-bottom: 65px;
+    }
+}

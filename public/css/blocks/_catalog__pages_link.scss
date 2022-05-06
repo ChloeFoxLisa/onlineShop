@@ -1,0 +1,87 @@
+.pages-links {
+    border: 1px solid #EBEBEB;
+    width: 290px;
+    height: 44px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 96px;
+    display: flex;
+}
+
+.pages {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 13px 0;
+    width: 290px;
+    justify-content: space-between;
+}
+
+.this-page {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EF5B70;
+}
+
+.page-link {
+    text-decoration: none;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C4C4C4;
+    margin-left: 22px;
+}
+
+.page-link:hover{
+    color: $pink;
+}
+
+.page-link-last {
+    margin-left: 0;
+    width: 20px;
+}
+
+.page-link-first-button {
+    margin: auto;
+    background-color: #FFFFFF;
+    border: none;
+    height: 14px;
+    width: 8px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.page-link-second-button {
+    margin: auto;
+    background-color: #FFFFFF;
+    border: none;
+    height: 14px;
+    width: 8px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ellipsis {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C4C4C4;
+}
+
+.arrow-left:hover {
+    fill: $pink;
+}
+
+.arrow-right:hover {
+    fill: $pink;
+}

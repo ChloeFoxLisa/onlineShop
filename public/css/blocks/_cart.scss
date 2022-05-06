@@ -1,0 +1,311 @@
+.shopping_cart {
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+    &__products{
+        
+        &__card {
+            width: 650px;
+            height: 300px;
+            border: 1px solid #EAEAEA;
+            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+            display: flex;
+
+            &__cross {
+                margin-left: 60px;
+                margin-top: 22px;
+                cursor: pointer;
+
+                &__fill:hover {
+                    fill:#A4A4A4;
+                }
+            }
+
+            &__first {
+                margin-top: 100px;
+                margin-bottom: 40px;
+            }
+            
+            &__second {
+                margin-bottom: 70px;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                height: 222px;
+                width: 260px;
+                margin-left: 30px;
+                margin-top: 22px;
+
+                &__name {
+                    font-family: 'Lato';
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 29px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #222222;
+                    margin-bottom: 42px;
+                    margin-top: 0;
+                }
+
+                &__info {
+
+                    &__descr, &__descr__pink {
+                        font-family: 'Lato';
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #6F6E6E;
+                        margin-top: 6px;
+
+                        &__pink {
+                            color: $pink;
+                            margin-left: 5px;
+                        }
+
+                        &__number {
+                            display: flex;
+                        }
+
+                        &__quantity {
+                            margin-left: 24px;
+                            text-align: center;
+                            color: #656565;
+                            width: 40px;
+                            height: 20px;
+                            margin-top: 6px;
+                        }
+                        
+                        &__price {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 125px;
+
+            &__button {
+                height: 20px;
+                width: 235px;
+                border: 1px solid #A4A4A4;
+                font-family: 'Lato';
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 17px;
+                letter-spacing: 0em;
+                text-align: center;
+                padding: 15px 0;
+                transition-duration: 0.4s;
+            }
+
+            &__button:hover {
+                background-color: $pink;
+                color: #FFFFFF;
+            }
+        }     
+    }
+
+    &__order {
+        width: 360px;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+
+            &__shipping_adress {
+                margin-top: 100px;
+                margin-bottom: 20px;
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            &__country, &__state, &__postcode {
+                height: 45px;
+                width: 342px;
+                margin-bottom: 20px;
+                font-family: Lato;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #222222;
+                border: 1px solid #A4A4A4;
+                padding-left: 15px;
+            }
+
+            &__postcode {
+                margin-bottom: 25px;
+                -moz-appearance: textfield;
+	            -webkit-appearance: textfield;
+	            //appearance: textfield;
+            }
+
+            &__postcode::-webkit-outer-spin-button, &__postcode::-webkit-inner-spin-button {
+                display: none;
+            }
+
+            &__button {
+                width: 100px;
+                height: 35px;
+                border: 1px solid #A4A4A4;
+                background-color: white;
+                font-family: 'Lato';
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: center;
+                transition-duration: 0.4s;
+            }
+
+            &__button:hover {
+                background-color: $pink;
+                color: #FFFFFF;
+            }
+        }
+
+        &__price {
+            height: 214px;
+            width: 360px;
+            background-color: #F5F3F3;
+
+            &__sub {
+                padding-top: 40px;
+                padding-left: 220px;
+                width: 110px;
+                display: flex;
+                justify-content: space-between;
+
+                &__text, &__money {
+                    font-family: 'Lato';
+                    font-size: 11px;
+                    font-weight: 400;
+                    line-height: 13px;
+                    letter-spacing: 0em;
+                    color: #4A4A4A;
+                }
+            }
+
+            &__grand {
+                padding-top: 12px;
+                padding-left: 160px;
+                width: 170px;
+                display: flex;
+                justify-content: space-between;
+
+                &__text, &__money {
+                    font-family: 'Lato';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                &__money {
+                    font-weight: 700;
+                    color: $pink;
+                }
+            }
+
+            &__line {
+                text-align: center;
+                margin-top: 2px;
+                margin-bottom: 15px;
+            }
+
+            &__button {
+                width: 270px;
+                height: 50px;
+                background-color: $pink;
+                border: none;
+                font-family: 'Lato';
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #FFFFFF;
+                display: inline-block;
+                cursor: pointer;
+                transition-duration: 0.4s;
+
+                &__center {
+                    text-align: center;
+                }
+            }
+
+            &__button:hover {
+                background-color: #FFFFFF;
+                color: $pink;
+                border: 1px solid $pink;
+            }  
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .shopping_cart {
+        flex-direction: column;
+        height: 1287px;
+
+        &__products__card__first {
+            margin: 40px 0;
+            margin-top: 60px;
+        }
+
+        &__products__items {
+            margin-bottom: 64px;
+        }
+
+        &__order {
+            display: flex;
+            justify-content: space-between;
+
+            &__price{
+                margin-left: 20px;
+                margin-top: 38px;
+
+                &__sub {
+                    padding-left: 215px;
+                    margin-right: 100px;
+                }
+
+                &__grand {
+                    padding-left: 151px;
+                }
+            }
+
+            &__info__shipping_adress{
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media (max-width: 1180px) {
+    .product-descr{
+        margin-top: 0;
+
+        &-wrap {
+            border: none;
+        }
+    }
+}
