@@ -27,12 +27,25 @@ main {
     padding: 0 calc(50% - 1140px / 2);
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1180px) and (min-width: 768px){
     .wrap {
         width: 736px;
     }
     
     .center {
     padding: 0 calc(50% - 736px / 2);
+    }
 }
-}
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 325px;
+    }
+
+    .center {
+        padding: 0 calc(50% - 325px / 2);
+    }
+
+}           
+
+

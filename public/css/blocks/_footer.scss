@@ -35,3 +35,9 @@
 .contact-box:hover .contact-img-background{
     fill: $pink;
 }
+
+@media (max-width: 768px) {
+    .copyright{
+        padding: 0px;
+    }
+}           

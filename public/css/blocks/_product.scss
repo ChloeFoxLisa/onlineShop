@@ -185,3 +185,51 @@
 .other-products {
     margin-bottom: 128px;
 }
+
+@media (max-width: 1180px) and (min-width: 768px){
+    
+}
+
+@media (max-width: 768px) {
+    .product{
+        background-image: url(../img/product.png);
+        background-repeat: no-repeat;
+    }
+
+    .product-img{
+        display: none;
+    }
+
+    .product-descr{
+        margin-bottom: 10px;
+    }
+
+    .product-descr-text{
+        width: auto;
+        height: auto;
+        margin: 10px 10px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    .product-descr-line{
+        display: none;   
+    }
+
+    .product-filters{
+        width: 300px;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .other-product-filters {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 0;
+    }
+}           
+

@@ -1,5 +1,4 @@
 .registration {
-    height: 660px;
     display: flex;
     justify-content: space-between;
 
@@ -155,8 +154,31 @@
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1180px) and (min-width: 768px) {
     .registration__loyalty {
-        margin-left: 22px;  
+        margin-left: 22px; 
     }
 }
+
+@media (max-width: 768px) {
+    .registration{
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+
+        &__info{
+            width: 320px;
+        }
+
+        &__loyalty{
+            width: 320px;
+            height: auto;
+            margin-bottom: 80px;
+        }
+    }
+
+    .registration__info__name__first, .registration__info__name__second {
+        width: 300px;
+    }
+
+}  

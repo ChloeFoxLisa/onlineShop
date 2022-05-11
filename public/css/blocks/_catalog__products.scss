@@ -73,7 +73,7 @@
     width: 60px;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1180px) and (min-width: 768px) {
     .card-hidden{
         display: none;
     }
@@ -94,3 +94,30 @@
         margin-bottom: 15px;
     }
 }
+
+@media (max-width: 768px) {
+    .products {
+        margin: 0;
+    }
+
+    .catalog-filters {
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .catalog-filter {
+        margin: 0;
+        min-width: 20px;
+    }
+    
+    .filter{
+        font-size: 0;
+    }
+
+    .card-box{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+} 

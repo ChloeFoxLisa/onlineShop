@@ -38,9 +38,41 @@
     color: $pink;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1180px) and (min-width: 768px) {
     .promo-wrap {
     min-height: 365px;
     background-size: 365px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo{
+        height: 325px;
+        display: flex;
+        align-items: center;
+    }
+
+    .promo-wrap {
+        background-image: none;
+        justify-content: center;
+        min-height: 0px;
+        
+    }
+
+    .promo-title{
+        width: 100%;
+        align-self: center;
+    }
+
+    .promo-title-first {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 46px;  
+    }
+    
+    .promo-title-second {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
     }
 }

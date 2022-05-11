@@ -52,3 +52,29 @@
     color: $pink;
     padding-left: 5px;
 }
+
+@media (max-width: 1180px) and (min-width: 768px){
+    
+}
+
+@media (max-width: 768px) {
+    .catalog-nav{
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .title{
+        padding: 0;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+
+    .nav-links{
+        padding: 0;
+    }
+}    
