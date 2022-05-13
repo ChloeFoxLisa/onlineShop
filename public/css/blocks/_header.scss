@@ -36,7 +36,7 @@
     margin: 25px 0;
     padding: 37px 34px;
     transform: scaley(1);
-    transform-origin: left  top;
+    transform-origin: left top;
     transition: 0.5s;
     z-index: 100;
 }
@@ -96,6 +96,8 @@
     }
 
     .nav{
-        margin-top: 28px;
+        top: 210%;
+        width: 290px;
+        margin: 0 calc(50% - 325px);
     }
 }

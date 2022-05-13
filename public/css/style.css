@@ -98,8 +98,8 @@ main {
   padding: 37px 34px;
   -webkit-transform: scaley(1);
           transform: scaley(1);
-  -webkit-transform-origin: left  top;
-          transform-origin: left  top;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 100;
@@ -160,7 +160,9 @@ main {
     display: none;
   }
   .nav {
-    margin-top: 28px;
+    top: 210%;
+    width: 290px;
+    margin: 0 calc(50% - 325px);
   }
 }
 
